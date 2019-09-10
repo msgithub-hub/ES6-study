@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+
+</div>
+<script>
+    class User {
+        constructor(name, pass) {
+            this.name = name;
+            this.pass = pass;
+        }
+
+        showName() {
+            alert(this.name)
+        }
+
+        showPass() {
+            alert(this.pass)
+        }
+    }
+
+    // VipUser继承了User的一些属性
+    class VipUser extends User {
+        constructor(name, pass, level) {
+            super(name, pass);
+            this.level = level;
+        }
+
+        showLevel() {
+            alert(this.level)
+        }
+    }
+
+    let ul = new VipUser('张三', '123456', 12);
+    ul.showName();
+    ul.showPass();
+    ul.showLevel();
+</script>
+</body>
+</html>

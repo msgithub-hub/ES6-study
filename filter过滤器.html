@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    
+</div>
+<script>
+    // let arr=[12,33,11,55,66,78];
+    // let result=arr.filter(function (item) {
+    //     if(item%3===0){
+    //         return true
+    //     }else{
+    //         return false
+    //     }
+    // });
+    // console.log(result)
+
+    let arr=[
+        {tittle:"男鞋",price:30},
+        {tittle:"女鞋",price:2222230},
+        {tittle:"男裤子",price:130},
+        {tittle:"女包",price:3999999999990},
+        ];
+    let result=arr.filter(function (item) {
+        if(item.price>=10000){
+            return true
+        }else{
+            return false
+        }
+    });
+    console.log(result)
+</script>
+</body>
+</html>
